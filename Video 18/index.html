@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BoxModel</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .Box {
+            background-color: aqua;
+        }
+        .Box1 {
+            color: yellow;
+            padding: 10px;
+            margin: 30px;
+            border: 2px solid blue;
+            height: 100px;
+            box-sizing: border-box; /* Margin not included */
+        }
+        .Box2{
+            color: red;
+            padding: 10px;
+            margin: 25px; /* Because of margin collapse the difference will be 30px instead of 55px beacuse it consider maximum margin*/
+            border: 2px solid blue;
+            height: 100px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="Box Box1"> i am a box</div>
+    <div class="Box Box2"> i am another box</div>
+    
+</body>
+</html>
