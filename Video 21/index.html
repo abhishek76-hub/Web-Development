@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1-0">
+    <title>Specificity</title>
+    <!-- The specificity of this selector is 1 -->
+     <style>
+        /* The Specificity of this sekector is 1 */
+        h1{
+            color: aqua;
+        }
+        /* The Specificity of this sekector is 1+10=11 */
+        h1.yellow{
+            color: red;
+        }
+        /* This is the example of attribute selector. The Specificity of this sekector is 1 */
+        [data-x=a] {
+            color: maroon;
+        }
+        /* The Specificity of this sekector is 10 */
+        .cred{
+            color: beige;
+        }
+        /* The Specificity of this sekector is 10 */
+        .cpurple{
+            color: green;
+        }
+        /* The specificity of this selector is 1 + 10 + 10 + 10 + 10 = 41  */
+        a.harryclass.rohan-class[href]:hover {
+            color: blueviolet;
+        }
+         
+     </style>
+     <div>
+        <h1 class="yellow cred cpurple" data-x="a"> CSS Specificity</h1>
+     </div>
+     <span>
+        <ol>
+            <li>Position and order of appearance: the order in which your CSS rules appear</li>
+            <li>Specificity: an algorithm that determines which CSS selector has the strongest match (inline > ID > class > element > universal)</li>
+            <li>Origin: the order in which CSS appears and where it comes from, whether that is a browser style, CSS from a browser extension, or your authored CSS</li>
+            <li>Importance: some CSS rules are weighted more heavily than others, especially with the !important rule type</li>
+        </ol>
+     </span>
+</head>
+</html>
