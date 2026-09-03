@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float and Clear</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .cards {
+            border: 2px solid black;
+            display: flow-root;
+        }
+
+        img {
+            float: left;
+        }
+
+        .card {
+            border: 2px solid red;
+        }
+
+        .cards :nth-child(3) {
+            background-color: antiquewhite;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkwB_2pHUFCpbcaaUgqtfBj3xAmsGWFtzUN1YNFpn4_PoMdrPRXRSrq0Q&s=10"
+            alt="" width="255px">
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque odit, maxime voluptas tenetur
+                voluptatibus ratione nihil magnam velit voluptatum a quidem eligendi. Quis excepturi saepe accusamus
+                unde reiciendis, dicta quas ex sapiente laborum, culpa dolorem rerum ipsa accusantium. Itaque neque
+                voluptatem, quos aliquid incidunt commodi!</p>
+        </div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dignissimos error commodi, eius
+            dolorem pariatur dolores? Cupiditate facilis ex provident saepe numquam dolore consectetur tempore
+            perspiciatis. Blanditiis impedit pariatur repellat doloremque dolorum sed tempore adipisci, quia explicabo
+            quasi? Explicabo sequi dolor illum, ipsam cupiditate perferendis, ipsum facilis numquam saepe aut, alias quo
+            ea esse? Qui sapiente repudiandae nemo fugiat et, asperiores facere aut provident consectetur, placeat
+            architecto a adipisci expedita vero incidunt tempore commodi at ut hic numquam illum deleniti. Repellendus
+            voluptatum praesentium quibusdam iure nesciunt sequi cum sed deleniti illo harum debitis, autem similique
+            est, qui fugiat voluptates. Laboriosam cum, cupiditate suscipit quibusdam sunt distinctio ipsa consectetur
+            quasi, ullam earum est illum molestias id doloribus a velit harum perferendis quis odit animi iure quam
+            quaerat? Placeat, doloribus. Atque sit quisquam assumenda ipsum iste dolor ducimus blanditiis non aperiam
+            quidem voluptate eos vitae, error porro delectus obcaecati maxime natus at voluptatem quo! Sed mollitia
+            alias cum perspiciatis. Ducimus minus maxime dignissimos autem, in tempore quidem consequuntur animi rem,
+            odio natus repudiandae sunt enim voluptatum distinctio commodi velit accusantium. Dignissimos laboriosam
+            quidem quae obcaecati eligendi dolorum similique, reprehenderit, dolores animi impedit et. Qui ipsam
+            delectus laboriosam dolorum quisquam sequi esse recusandae similique reprehenderit? Quas perferendis rerum
+            dolore praesentium possimus quibusdam dolores voluptatum fugit, assumenda harum fugiat. Repellendus pariatur
+            nihil commodi temporibus quos illo magnam similique minima non eos culpa distinctio reprehenderit molestiae
+            sint veritatis, amet ex ea, mollitia, beatae error assumenda odit neque dolorum. Suscipit iure, quasi, enim
+            expedita repellendus animi aperiam similique quam consequatur incidunt facere ab voluptate minus! Culpa
+            repudiandae non minus aliquam ea ipsa autem quasi, exercitationem dignissimos eveniet! Beatae sed maxime
+            provident dolorem explicabo tempore, dolorum omnis non ad, labore exercitationem odio iusto ratione amet
+            impedit nihil voluptatem recusandae facere in illo dolor ducimus blanditiis! Temporibus, repudiandae?</div>
+        <div class="card">card3</div>
+    </div>
+</body>
+
+</html>
