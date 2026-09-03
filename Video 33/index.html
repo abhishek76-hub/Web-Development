@@ -1,0 +1,82 @@
+<!-- Create a multicolor website which can change color using CSS Variables -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice question 4</title>
+    <style>
+      
+        :root{
+            --color:orange;
+            --seccolor:rgb(235, 169, 235);
+            --textcolor:white;
+            --box-color: rgb(255, 111, 0);
+        }
+        *{
+            padding:0px;
+            margin: 0px;
+        }
+        body{
+            background-color: var(--seccolor);
+        }
+        nav{
+            background-color: var(--color);
+            padding: 15px;
+        }
+        nav ul{
+            display: flex;
+            list-style: none;
+        }
+        nav ul li{
+            color: var(--textcolor);
+            padding: 10px 20px;
+        }
+        main{
+            padding: 30px;
+            text-align: center;
+        }
+        .box{
+            background-color: var(--box-color);
+            color: var(--textcolor);
+            padding: 40px;
+            margin: 30px auto;
+            width: 300px;
+            border-radius: 15px;
+        }
+        footer{
+            background-color: var(--color);
+            color: var(--textcolor);
+            padding: 15px;
+            text-align: center;
+        }
+          @media only screen and (max-width: 455px){
+            body{
+                background-color: lightblue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>About</li>
+            <li>Home</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Multicolor website</h1>
+
+        <div class="box"> This is A box</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sed nisi odio omnis sequi laborum veritatis rem, aliquid, nihil tempora sunt libero inventore provident dolor.</p>
+    </main>
+    <footer>
+        <div class="foot">Copyright | Website</div>
+    </footer>
+
+</body>
+
+</html>
