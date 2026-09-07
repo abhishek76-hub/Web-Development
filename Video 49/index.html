@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object Fit And Position</title>
+    <style>
+        .container {
+            height: 655px;
+            width: 655px;
+            border: 2px solid black;
+            /* background-color: rgb(214, 253, 240); */
+            background-position: center center;
+            background-clip: border-box;
+            background-image: url("https://us.123rf.com/450wm/progressman/progressman1909/progressman190900115/130695651-woman-in-black-coat-walking-along-the-sea.jpg?ver=6");
+            background-repeat: no-repeat;
+        }
+
+        .container img {
+            height: 655px;
+            width: 655px;
+            /* object-fit: cover;
+            object-position: bottom right; */
+            /* object-position: 10px 20px; */
+            /* object-fit: contain; */
+            /* object-fit: fill; */
+            object-fit: scale-down;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt=""> -->
+    </div>
+    </div>
+</body>
+
+</html>
