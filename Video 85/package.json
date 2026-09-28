@@ -1,0 +1,26 @@
+{
+  "name": "spotify",
+  "version": "1.0.0",
+  "description": "This is my spotify clone for my app",
+  "keywords": [
+    "Spotify"
+  ],
+  "homepage": "https://github.com/abhishek76-hub/Web-Development#readme",
+  "bugs": {
+    "url": "https://github.com/abhishek76-hub/Web-Development/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhishek76-hub/Web-Development.git"
+  },
+  "license": "ISC",
+  "author": "Abhi",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "slugify": "^1.6.9"
+  }
+}
